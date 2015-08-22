@@ -9,7 +9,7 @@
 
 It's recommended to install the required software in this order. The important part is that Xamarin Studio and Monobjc must be installed after the Mono Framework.
 
-### How to build the sample Connection Plugin (DummyConnection)
+### How to build the sample Connection Plugin
 * Open RoyalTSX_V2_Public.sln with Xamarin Studio.
 * Build the DummyConnection project.
 
