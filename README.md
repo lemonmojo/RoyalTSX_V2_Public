@@ -19,4 +19,4 @@ It's recommended to install the required software in this order. The important p
 * Initiate a Remote Desktop Connection.
 
 ### Support
-If you need additional information or are having troubles getting the samples to run, please [contact us](http://support.royalapplications.com/).
+If you need additional information or are having trouble getting the samples to run, please [contact us](http://support.royalapplications.com/).
