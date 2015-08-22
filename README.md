@@ -7,7 +7,7 @@
 * [Xamarin Studio](http://xamarin.com/studio)
 * [Monobjc](http://monobjc.net/downloads.html)
 
-It's recommended to install the required software in this order. Xamarin Studio and Monobjc must be installed after the Mono Framework.
+It's recommended to install the required software in this order. The important part is that Xamarin Studio and Monobjc must be installed after the Mono Framework.
 
 ### How to build the sample Connection Plugin (DummyConnection)
 * Open RoyalTSX_V2_Public.sln with Xamarin Studio.
@@ -17,3 +17,6 @@ It's recommended to install the required software in this order. Xamarin Studio 
 * Restart Royal TSX to reload all Plugins.
 * Go to Preferences - Plugin Settings - Remote Desktop and switch the 'Default Plugin' to 'Dummy'.
 * Initiate a Remote Desktop Connection.
+
+### Support
+If you need additional information or are having troubles getting the samples to run, please [contact us](http://support.royalapplications.com/).
