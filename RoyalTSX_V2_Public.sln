@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Managed", "Managed", "{66A8D3FE-D4FA-4843-869B-A6DFD711B61F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{3CF38DC7-BF71-4A60-97B2-5584DFDFFFC3}"
+	ProjectSection(SolutionItems) = preProject
+		Managed\Libraries\remojoApi.dll = Managed\Libraries\remojoApi.dll
+		Managed\Libraries\RoyalDocument.Desktop.dll = Managed\Libraries\RoyalDocument.Desktop.dll
+		Managed\Libraries\RoyalLogging.Desktop.dll = Managed\Libraries\RoyalLogging.Desktop.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConnectionPlugins", "ConnectionPlugins", "{88C9FDD5-8EB6-4AD6-8CBF-85AD6C59505B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{E5EA2D2B-C4BC-49C6-9249-5D8FD68C566A}"
+	ProjectSection(SolutionItems) = preProject
+		Managed\ConnectionPlugins\Scripts\AfterBuildScript.sh = Managed\ConnectionPlugins\Scripts\AfterBuildScript.sh
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyConnection", "Managed\ConnectionPlugins\DummyConnection\DummyConnection.csproj", "{B6DB1F5A-8A3F-46C5-B869-99CA87BE087C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6DB1F5A-8A3F-46C5-B869-99CA87BE087C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6DB1F5A-8A3F-46C5-B869-99CA87BE087C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6DB1F5A-8A3F-46C5-B869-99CA87BE087C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6DB1F5A-8A3F-46C5-B869-99CA87BE087C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3CF38DC7-BF71-4A60-97B2-5584DFDFFFC3} = {66A8D3FE-D4FA-4843-869B-A6DFD711B61F}
+		{88C9FDD5-8EB6-4AD6-8CBF-85AD6C59505B} = {66A8D3FE-D4FA-4843-869B-A6DFD711B61F}
+		{E5EA2D2B-C4BC-49C6-9249-5D8FD68C566A} = {88C9FDD5-8EB6-4AD6-8CBF-85AD6C59505B}
+		{B6DB1F5A-8A3F-46C5-B869-99CA87BE087C} = {88C9FDD5-8EB6-4AD6-8CBF-85AD6C59505B}
+	EndGlobalSection
+EndGlobal

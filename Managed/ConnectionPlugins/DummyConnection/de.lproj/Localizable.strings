@@ -1,0 +1,13 @@
+/*
+GERMAN LANGUAGE FILE
+*/
+
+"Dummy" = "Dummy";
+"Dummy Connection Settings" = "Dummy Verbindungseinstellungen";
+"Dummy Template Settings" = "Dummy Vorlageneinstellungen";
+"With a Dummy connection you can do amazing things. It displays a dummy image when you connect. Isn't that exciting? Everyone on this planet should probably use Dummy connections because they're so useful." = "Mit einer Dummy Verbindung können Sie tolle Sachen anstellen. Sie zeigt ein Dummy Bild an wenn Sie verbinden. Ist das nicht toll? Jeder Mensch sollte wahrscheinlich Dummy Verbindungen verwenden weil sie so unglaublich nützlich sind.";
+"The \"Display Name\" must not be empty." = "Der \"Anzeige Name\" darf nicht leer sein.";
+"The \"Computer Name\" must not be empty." = "Der \"Computer Name\" darf nicht leer sein.";
+"Console/Admin Session" = "Console/Admin Sitzung";
+"Hello World!" = "Hallo Welt!";
+"Show Message" = "Nachricht anzeigen";

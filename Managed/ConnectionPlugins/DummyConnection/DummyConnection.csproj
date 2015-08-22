@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6DB1F5A-8A3F-46C5-B869-99CA87BE087C}</ProjectGuid>
+    <ProjectTypeGuids>{804445EB-57E1-4F64-8830-61A8701F1C25};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MyUniqueNamespace</RootNamespace>
+    <MacOSArch>X8664</MacOSArch>
+    <Archive>False</Archive>
+    <MacOSVersion>MacOS107</MacOSVersion>
+    <MacOSApplicationType>CocoaApplication</MacOSApplicationType>
+    <MacOSFrameworks>AppKit;Foundation</MacOSFrameworks>
+    <AssemblyName>DummyConnection</AssemblyName>
+    <MacOSApplicationCategory>
+    </MacOSApplicationCategory>
+    <BundleId>com.lemonmojo.RoyalTSX.DummyConnection</BundleId>
+    <BundleVersion>1.0</BundleVersion>
+    <Signing>False</Signing>
+    <SigningIdentity>
+    </SigningIdentity>
+    <UseEntitlements>False</UseEntitlements>
+    <EmbeddedFrameworks>
+    </EmbeddedFrameworks>
+    <AdditionalAssemblies>
+    </AdditionalAssemblies>
+    <ExcludedAssemblies>
+    </ExcludedAssemblies>
+    <AdditionalLibraries>
+    </AdditionalLibraries>
+    <ArchiveIdentity>
+    </ArchiveIdentity>
+    <CombineArtwork>False</CombineArtwork>
+    <EncryptArtwork>False</EncryptArtwork>
+    <EncryptArtworkSeed />
+    <EncryptionSeed>
+    </EncryptionSeed>
+    <MainNibFile>en.lproj\MainMenu.xib</MainNibFile>
+    <BundleIcon>Monobjc.icns</BundleIcon>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command="sh ../Scripts/AfterBuildScript.sh ${ProjectConfigName} ${ProjectName}" workingdir="${ProjectDir}" />
+      </CustomCommands>
+    </CustomCommands>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command="sh ../Scripts/AfterBuildScript.sh ${ProjectConfigName} ${ProjectName}" workingdir="${ProjectDir}" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Monobjc, Version=10.7.0.0, Culture=neutral">
+      <Package>monobjc-10.7</Package>
+    </Reference>
+    <Reference Include="Monobjc.AppKit, Version=10.7.0.0, Culture=neutral">
+      <Package>monobjc-10.7</Package>
+    </Reference>
+    <Reference Include="Monobjc.Foundation, Version=10.7.0.0, Culture=neutral">
+      <Package>monobjc-10.7</Package>
+    </Reference>
+    <Reference Include="remojoApi">
+      <HintPath>..\..\Libraries\remojoApi.dll</HintPath>
+    </Reference>
+    <Reference Include="RoyalDocument.Desktop">
+      <HintPath>..\..\Libraries\RoyalDocument.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="RoyalLogging.Desktop">
+      <HintPath>..\..\Libraries\RoyalLogging.Desktop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildBinPath)\Monobjc.CocoaApplication.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Icons\" />
+    <Folder Include="PluginInfo\" />
+    <Folder Include="en.lproj\" />
+    <Folder Include="de.lproj\" />
+    <Folder Include="Helper\" />
+    <Folder Include="UI\" />
+    <Folder Include="Frameworks\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReleaseNotes.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="PluginInfo\PluginInfo.xml" />
+    <None Include="PluginInfo\Icon_256x256.png" />
+    <None Include="PluginInfo\Icon_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="en.lproj\Localizable.strings" />
+    <Content Include="de.lproj\Localizable.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DummyConnection.cs" />
+    <Compile Include="Helper\Utils.cs" />
+    <Compile Include="UI\DummyPropertyPages.cs" />
+    <Compile Include="UI\PropertyPageDummyMainController.cs" />
+    <Compile Include="UI\PropertyPageDummyMainController.designer.cs">
+      <DependentUpon>PropertyPageDummyMainController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DummySessionViewController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Icons\Icon_256x256.png" />
+    <EmbeddedResource Include="Resources\Icons\Icon_16x16.png" />
+    <EmbeddedResource Include="Resources\Icons\Icon_32x32.png" />
+    <EmbeddedResource Include="Resources\Icons\Icon_48x48.png" />
+    <EmbeddedResource Include="Resources\Icons\IconActive_16x16.png" />
+    <EmbeddedResource Include="Resources\Icons\IconInactive_16x16.png" />
+    <EmbeddedResource Include="Resources\Icons\IconProgress_16x16.png" />
+    <EmbeddedResource Include="Resources\Icons\IconActive_32x32.png" />
+    <EmbeddedResource Include="Resources\Icons\IconInactive_32x32.png" />
+    <EmbeddedResource Include="Resources\Icons\IconProgress_32x32.png" />
+    <EmbeddedResource Include="Resources\Icons\Icon_512x512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="en.lproj\PropertyPageDummyMain.xib" />
+  </ItemGroup>
+</Project>

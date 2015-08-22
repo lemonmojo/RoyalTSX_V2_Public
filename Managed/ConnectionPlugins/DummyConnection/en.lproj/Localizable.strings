@@ -1,0 +1,13 @@
+/*
+ENGLISH LANGUAGE FILE
+*/
+
+"Dummy" = "Dummy";
+"Dummy Connection Settings" = "Dummy Connection Settings";
+"Dummy Template Settings" = "Dummy Template Settings";
+"With a Dummy connection you can do amazing things. It displays a dummy image when you connect. Isn't that exciting? Everyone on this planet should probably use Dummy connections because they're so useful." = "With a Dummy connection you can do amazing things. It displays a dummy image when you connect. Isn't that exciting? Everyone on this planet should probably use Dummy connections because they're so useful.";
+"The \"Display Name\" must not be empty." = "The \"Display Name\" must not be empty.";
+"The \"Computer Name\" must not be empty." = "The \"Computer Name\" must not be empty.";
+"Console/Admin Session" = "Console/Admin Session";
+"Hello World!" = "Hello World!";
+"Show Message" = "Show Message";

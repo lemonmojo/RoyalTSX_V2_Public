@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PluginInfo>
+	<ID>e41a1e2b-45c1-45f6-a6db-3e99228b86d1</ID>
+	<Name>Dummy</Name>
+	<ShortDescription>Do amazing things.</ShortDescription>
+	<Description>
+		<![CDATA[
+			<i>Do amazing things.</i><br /><br />
+			The official Royal TSX Dummy Plugin is very exciting because it does <strong>a lot of things</strong>. But unfortunately that's not true...
+		]]>
+	</Description>
+	<SupportedProtocols>RDP</SupportedProtocols>
+	<ObjectTypeName>RoyalRDSConnection</ObjectTypeName>
+	<Version>2.0.0.1000</Version>
+	<MinAppVersion>2.1.0.1000</MinAppVersion>
+	<MaxAppVersion>9999.0.0.0</MaxAppVersion>
+	<PluginURL>http://www.royaltsx.com/ts/osx/features-all</PluginURL>
+	<PublisherName>Lemon Mojo</PublisherName>
+	<PublisherURL>http://www.lemonmojo.com/</PublisherURL>
+	<PublisherEMail>office@lemonmojo.com</PublisherEMail>
+	<SupportURL>http://support.royalapplications.com/</SupportURL>
+	<SupportEMail>support@royaltsx.com</SupportEMail>
+	<LicenseType>Apache License 2.0</LicenseType>
+	<LicenseURL>http://www.apache.org/licenses/LICENSE-2.0.html</LicenseURL>
+</PluginInfo>
