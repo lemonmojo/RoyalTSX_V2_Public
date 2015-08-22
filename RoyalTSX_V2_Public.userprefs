@@ -9,7 +9,7 @@
               <Node name="ConnectionPlugins" expanded="True">
                 <Node name="Scripts" expanded="True" />
                 <Node name="DummyConnection" expanded="True">
-                  <Node name="de.lproj" selected="True" />
+                  <Node name="de.lproj" selected="False" />
                 </Node>
               </Node>
             </Node>
